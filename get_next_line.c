@@ -6,7 +6,7 @@
 /*   By: sbibers <sbibers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 10:37:53 by sbibers           #+#    #+#             */
-/*   Updated: 2024/09/11 15:41:22 by sbibers          ###   ########.fr       */
+/*   Updated: 2024/11/02 16:43:09 by sbibers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,25 +118,3 @@ char	*get_next_line(int fd)
 	}
 	return (line);
 }
-
-/*
-int    main(void)
-{
-        int             fd;
-        char    *line;
-
-        fd = open("test_file.txt", O_RDONLY);
-        if (fd < 0)
-        {
-                perror("Error opening file");
-                return (1);
-        }
-        while ((line = get_next_line(fd)) != NULL)
-        {
-                printf("%s", line);
-                free(line);
-        }
-        close(fd);
-        return (0);
-}
-*/
